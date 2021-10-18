@@ -47,6 +47,17 @@ print( list( filter( lambda x: x%2==0 , list_1 )))   # output -> [2, 4, 6, 8]
 
 ###########################
 
+def myfunc(a, b):
+  return a + b
+
+x = map(myfunc, ('apple', 'banana', 'cherry'), ('orange', 'lemon', 'pineapple'))
+
+print(x)
+print(list(x))
+
+
+###########################
+
 cubed = map( lambda x: pow(x,3) , list_1 )
 x = list( cubed )
 print(x)                                             # [1, 8, 27, 64, 125, 216, 343, 512, 729]
