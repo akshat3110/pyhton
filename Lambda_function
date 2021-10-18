@@ -1,5 +1,4 @@
 
-# 4. 	Write at least 10-15 problem codes to demonstrate usage of Lambda functions in Python ( with use of map, filter , reduce etc. )
 
 s = lambda a : a + 10
 print(s(5))                                           # output -> 15
