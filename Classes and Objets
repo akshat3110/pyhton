@@ -1,7 +1,7 @@
 class MyClass:
   x = 5
 p1 = MyClass()
-print(p1.x) #outpit--> 5
+print(p1.x) #output--> 5
 
 ################
 
