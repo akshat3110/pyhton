@@ -232,8 +232,8 @@ def move_Spaces_front(str1):
   result = '"'+result + ''.join(noSpaces_char)+'"'
   return(result)
 
-print(move_Spaces_front("w3resource .  com  "))
-print(move_Spaces_front("   w3resource.com  "))
+print(move_Spaces_front("Akshat Agrawal"))
+print(move_Spaces_front("   Akshat  Agrawal  "))
 
 46.
 def capitalize_first_last_letters(str1):
