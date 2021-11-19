@@ -1,0 +1,335 @@
+16. 
+x = int(input("enter number of classess held:"))
+y = int(input("enter number of classess attended:"))
+z = int(input("percentage of classess attended:"))
+if z>80:
+    print("can sit in exam")
+else:
+    print("can not sit in exam")
+
+17. 
+
+18. 
+n=int(input("Enter a number:"))
+i=0
+while(n>0):
+    dig=n%10
+    i=i+dig
+    n=n//10
+print("The total sum of digits is:",i)
+
+19.
+n=int(input("Enter a number:"))
+i=1
+while(n>0):
+    dig=n%10
+    i=i*dig
+    n=n//10
+print("The total sum of digits is:",i)
+
+20. 
+n=int(input("Enter the range of number:"))
+sum=0
+p=3
+for i in range(1,n+1):
+    sum += p
+    p=(p*10)+3
+print("The sum of the series = ",sum)
+
+21.
+i = 1
+while i <= 5 :
+    j = 1
+    while  j <= i :
+        print("*", end=" ")
+        j += 1
+    print()
+    i += 1
+i = 1
+while i <= 4 :
+    j = 4
+    while j >= i:
+        print("*", end = " ")
+        j -= 1
+    print()
+    i += 1
+    
+22. 
+num = int(input())
+rev = 0
+while num > 0:
+  rem = num % 10  
+  rev = (rev*10) + rem
+  num = num//10  
+print(rev)
+
+23.
+n=int(input("Enter any number :"))
+t=n
+reverse_n=0
+while(n>0):
+    d=n%10
+    reverse_n=reverse_n*10+d
+    n=n//10
+if(t==reverse_n):
+    print("The number is palindrome!")
+else:
+    print("Not a palindrome!")
+
+25.
+n = int(input("Enter a Number:"))
+factorial=1
+i =1
+while  i<=n:
+    factorial = factorial*i
+    i += 1   
+print(factorial)
+
+26.
+n = int(input("Enter any Number: "))
+s = 0
+t = n
+
+while(t > 0):
+    Factorial = 1
+    i = 1
+    Reminder = t % 10
+
+    while(i <= Reminder):
+        Factorial = Factorial * i
+        i = i + 1
+
+    print("\nFactorial of %d = %d" %(Reminder, Factorial))
+    s = s + Factorial
+    t = t // 10
+
+print("\nSum of Factorials of a Given Number %d = %d" %(n, s))
+
+if (s == n):
+    print("%d is a Strong Number" %n)
+else:
+    print("%d is not a Strong Number" %n)]
+
+27. 
+list_elements =[1,1,1,2,3,4,5,6,6,7,7]
+unique_elements=[]
+for x in list_elements: 
+    if x not in unique_elements: 
+        unique_elements.append(x)
+for x in unique_elements:
+    print(x)
+    
+28. 
+n = int(input("Enter any number: "))
+sum1 = 0
+for i in range(1, n):
+    if(n % i == 0):
+        sum1 = sum1 + i
+if (sum1 == n):
+    print("The number is a Perfect number!")
+else:
+    print("The number is not a Perfect number!")
+ 
+29.
+num = 11
+if num > 1:
+    for i in range(2, int(num/2)+1):
+        if (num % i) == 0:
+            print(num, "is not a prime number")
+            break
+    else:
+        print(num, "is a prime number")
+  
+else:
+    print(num, "is not a prime number")
+    
+30.
+i = 1
+while i <= 5 :
+    j = 5
+    while j >= i:
+        print("*", end = " ")
+        j -= 1
+    print()
+    i += 1
+31.
+i = 1
+while i <= 9 :
+    j = 1
+    while  j <= i :
+        print(i, end=" ")
+        j += 1
+    print()
+    i += 1
+32.
+i = 1
+while i <= 9 :
+    j = 1
+    while  j <= i :
+        print(j, end=" ")
+        j += 1
+    print()
+    i += 1
+33. 
+i = 65
+while i <= 71 :
+    j = 65
+    while  j <= i :
+        print(chr(i), end="")
+        j += 1
+    print()
+    i += 1
+print(8*"F")
+
+34.
+str1 = 'abc'
+str2 = ' xyz'
+print((str1.replace("a", "x")) + (str2.replace("x", "a")))
+
+36. 
+str= input("enter string1:")
+print(str)
+
+if("polis" in str):
+        print(str+"CS")
+else:
+    print(str+"polisCS")
+    
+38.
+def change_sring(str1):
+      return str1[-1:] + str1[1:-1] + str1[:1]
+	  
+print(change_sring('abcd'))
+print(change_sring('12345'))
+
+40.
+a=input("enter a string:")
+print(a.upper())
+print(a.lower())
+
+41. 
+string = "Python is awesome, isn't it?"
+substring = "is"
+
+count = string.count(substring)
+
+print("The count is:", count)
+
+42. 
+str1 = 'AKSHAT'
+print(str1[:3].lower() + str1[3:])
+
+43.
+str1= 'AKSHAT  AGRAWAL   CSIT'
+str1=str1.replace('   ','')
+print(str1)
+
+44.
+def move_Spaces_front(str1):
+  noSpaces_char = [ch for ch in str1 if ch!=' ']
+  spaces_char = len(str1) - len(noSpaces_char)
+  result = ' '*spaces_char
+  result = '"'+result + ''.join(noSpaces_char)+'"'
+  return(result)
+
+print(move_Spaces_front("w3resource .  com  "))
+print(move_Spaces_front("   w3resource.com  "))
+
+46.
+def capitalize_first_last_letters(str1):
+     str1 = result = str1.title()
+     result =  ""
+     for word in str1.split():
+        result += word[:-1] + word[-1].upper() + " "
+     return result[:-1]  
+     
+print(capitalize_first_last_letters("python exercises practice solution"))
+print(capitalize_first_last_letters("w3resource"))
+
+49.
+def x(n):
+    return n**2 + 1
+a=x(4)
+print(a)
+ 
+50.
+string = 'Y-tatata-acropolis: 0.8475'
+
+col_pos = string.find(':')                  
+n = string[col_pos + 1:]               
+a = float(n)                  
+print(a)
+
+51.
+def middle(a, b, c) :
+    return min(max(a,b),max(b,c),max(a,c))
+
+a = int(input("Give a value: "))
+b = int(input("Give b value: "))
+c = int(input("Give c value: "))
+print("The requested value is ")
+print(middle(a,b,c)) 
+
+62. 
+input_string = input("Enter a list element separated by space ")
+list  = input_string.split()
+print("Calculating sum of element of input list")
+sum = 0
+for num in list:
+    sum += int (num)
+print("Sum = ",sum)
+
+63. 
+list1 = [ 1, 2, 3, 4, 5, 6, 7 ]  
+list1.insert(4, 10) 
+print(list1)
+
+66.
+print(end="Enter the Size of List: ")
+t = int(input())
+
+arr = []
+print(end="Enter " +str(t)+ " Elements: ")
+for i in range(t):
+    arr.append(input())
+
+print(end="\nEnter the Index Number: ")
+index = int(input())
+
+if index<t:
+    arr.pop(index)
+    print("\nThe New list is: ")
+    for i in range(t-1):
+        print(end=arr[i]+" ")
+else:
+    print("\nInvalid Index Number!")
+print() 
+
+67.
+list = [1,2,3,4,5,6,7,8,9]
+del list[0]
+del list[1]
+del list[4]
+print(list)
+
+68.
+def sub_lists (l):
+	lists = [[]]
+	for i in range(len(l) + 1):
+		for j in range(i):
+			lists.append(l[j: i])
+	return lists
+
+l1 = [1, 2, 3]
+print(sub_lists(l1))
+
+69.
+
+
+70. 
+list1 = [16, 41, 6, 55, 68, 97]
+ 
+for num in list1:
+
+    if num % 2 == 0:
+        print(num, end=" ")
