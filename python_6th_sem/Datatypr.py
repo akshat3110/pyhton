@@ -21,6 +21,8 @@ print(type(i))
 
 i={"Name" : "Akshat" ,"age":20}
 print(type(i))
+
+Ans:-
 <class 'int'>
 <class 'float'>
 <class 'str'>
